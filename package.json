@@ -1,16 +1,19 @@
 {
   "name": "tic-tac-toe",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "private": false,
+  "author": "Andriy Chapran",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.9",
     "@fortawesome/free-regular-svg-icons": "^5.6.0",
     "@fortawesome/free-solid-svg-icons": "^5.6.0",
     "@fortawesome/react-fontawesome": "^0.1.3",
-    "node-sass": "^4.10.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-scripts": "2.1.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.10.0"
   },
   "scripts": {
     "start": "react-scripts start",

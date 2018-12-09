@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { PureComponent, Fragment } from 'react'
 import './styles.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
@@ -8,7 +8,7 @@ const CROSS = faTimes
 const CIRCLE = faCircle
 const DRAW = 'DRAW'
 
-export default class GridContainer extends Component {
+export default class GridContainer extends PureComponent {
     state = this.setIntialState()
 
     setValue = idx => {
