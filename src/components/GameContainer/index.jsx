@@ -8,8 +8,8 @@ const CROSS = faTimes
 const CIRCLE = faCircle
 const DRAW = 'DRAW'
 
-export default class GridContainer extends PureComponent {
-  state = this.setIntialState()
+export default class GameContainer extends PureComponent {
+  state = this.getIntialState()
 
   setValue = idx => {
     const { winner, gridValues } = this.state
@@ -56,7 +56,7 @@ export default class GridContainer extends PureComponent {
     }
   }
 
-  setIntialState() {
+  getIntialState() {
     return {
       gridValues: new Array(9).fill(null),
       previousValue: null,
@@ -65,7 +65,7 @@ export default class GridContainer extends PureComponent {
   }
 
   resetGame = () => {
-    this.setState(this.setIntialState())
+    this.setState(this.getIntialState())
   }
 
   render() {
